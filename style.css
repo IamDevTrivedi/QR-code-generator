@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #1A2A3A;
+}
+
+.container {
+  background-color: #F5F5F5;
+  width: min(80vw, 400px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 35px;
+  border: 2px solid #D1D1D1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+#input-1 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  width: 90%;
+  margin: 10px 0px;
+  background-color: #FFFFFF;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#input-1:focus {
+  border-color: #3366CC;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(51, 102, 204, 0.2);
+}
+
+.container button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: #3366CC;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #2855B0;
+}
+
+.container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #3366CC;
+}
+
+#image-box {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+#image-box img {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#image-box.show-img {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid #CCCCCC;
+}
+
+.error {
+  animation: shake 0.3s ease-in-out 0s 5;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-5px);
+  }
+
+  20% {
+    transform: translateX(5px);
+  }
+
+  30% {
+    transform: translateX(-5px);
+  }
+
+  40% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  60% {
+    transform: translateX(5px);
+  }
+
+  70% {
+    transform: translateX(-5px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  90% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
